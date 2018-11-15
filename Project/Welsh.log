@@ -1,0 +1,124 @@
+2018-06-07 03:45:37,609 DEBUG Using selector: EpollSelector
+2018-06-07 03:45:37,611 INFO Serving on ('127.0.0.1', 11216)
+2018-06-07 03:46:46,005 INFO Connection from ('127.0.0.1', 55440)
+2018-06-07 03:46:46,005 INFO Data received:
+	'PEERHoliday Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,006 DEBUG Database updated.
+2018-06-07 03:46:46,006 INFO Propagate message:
+	PEERWelsh Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu
+2018-06-07 03:46:46,006 DEBUG Skip source of data, Holiday
+2018-06-07 03:46:46,007 INFO Disconnected from ('127.0.0.1', 55440)
+2018-06-07 03:48:43,167 INFO Connection from ('127.0.0.1', 55468)
+2018-06-07 03:48:46,065 INFO Data received:
+	'WHATSAT kiwi.cs.ucla.edu 10 1\r\n'
+2018-06-07 03:48:46,065 INFO Send:
+	'AT Goloman +8344471.081459045 kiwi.cs.ucla.edu +34.068930-118.445127 1520023934.918963997\n'
+2018-06-07 03:48:46,065 DEBUG Request to GooglePlaces. loc:34.06893,-118.445127 rad:10000.0m max_info:1
+2018-06-07 03:48:46,508 DEBUG Request Addr:
+	https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyA7lJIidoEdefGNThTmtmGj0Z7d7FJ6lEU&location=34.06893,-118.445127&radius=10000.0
+2018-06-07 03:48:46,509 DEBUG 1/20 places sent to client.
+2018-06-07 03:48:46,509 INFO Send:
+{
+  "html_attributions": [],
+  "next_page_token": "CqQCFwEAAKXb2_69rUncSd09XvlqNZX1HcoFDy-qTkBea5AC3wW82B9aJ7suTFtVyZ7LIvOfix94pJfhD1F8B0DmWAJrEAG3a6jPLL_GnLbMF657j6iOc2VTeP2qLFHJxLuR68GUskyVT-NqvCVmiED1S8Xe21R294WPjcs2oaoE_U1fiJ5BREIEF-BxUXolOyVaJT86W7AazqAsK6EKLD-DfHbbSIIIdsPlpwcKEm8MwrM57edeVfiu7pUlDv-hWqKp11BNgrG4qRRjOxTIXxyj77YkS2f-Y4tYzt-SLV0cxOvBT21zhAnkMgfMzOp57FYE3SNn2J8y5O_i430eEFf2I4smmCl0_crpXpxPD_oqgveBxnBQgW8RGWNBXl87nB2jvzCb9BIQMQbRDiaAnNU1UrDFNCizsxoUCb6-WErO5Wl3g7uz3sY6Nc3c75E",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 34.0522342,
+          "lng": -118.2436849
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 34.3373061,
+            "lng": -118.1552891
+          },
+          "southwest": {
+            "lat": 33.7036519,
+            "lng": -118.6681759
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+      "name": "Los Angeles",
+      "photos": [
+        {
+          "height": 1024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104783537625313340909/photos\">Radoescu Antonela</a>"
+          ],
+          "photo_reference": "CmRaAAAA_Ygg2UVUeIkb5VRgcDjiZD-C4NoGiYs6E2NQ-CMXxvcEpFeF03K4pT2a4muibdThLXA0YWjkKoE6PtsSK4nLzQC-fht-JUb18U30Fyr4jPXgOezZSkvryNz-dNo7fe4yEhCdoMX9LYKeEgyv_PZn9u5IGhRUnIrK__3UJlPNwC_KBRheVeMS1Q",
+          "width": 1548
+        }
+      ],
+      "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+      "reference": "CmRbAAAA9GWZ-VM9moN5VFI5tP4rKdzGMrrG5pHvrkXbhGrQfNS4F8W4D5Qekoz4G7VBqObszrZHRacfVwPYBLaikbl2r_rFk2X34_UO9L5Yoqx3uxFl6PNPKlPV-cIoFunNtaA8EhCxXtA_ZZdoit20tvI2eTokGhRSoEHJrPd9ngcmhxjLNoFLiukZxg",
+      "scope": "GOOGLE",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "vicinity": "Los Angeles"
+    }
+  ],
+  "status": "OK"
+}
+
+2018-06-07 03:49:48,736 INFO Data received:
+	'IAMAT Penguin -90.00+000.00 1528368240\r\n'
+2018-06-07 03:49:48,737 INFO Send:
+	'AT Welsh +348.7371883392334 Penguin -90.00+000.00 1528368240\n'
+2018-06-07 03:49:48,737 DEBUG Database updated.
+2018-06-07 03:49:48,737 INFO Propagate message:
+	PEERWelsh Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin
+2018-06-07 03:49:48,738 INFO Message sent to Holiday
+2018-06-07 03:50:08,215 INFO Data received:
+	'WHATSAT Penguin 50 1\r\n'
+2018-06-07 03:50:08,216 INFO Send:
+	'AT Welsh +348.7371883392334 Penguin -90.00+000.00 1528368240\n'
+2018-06-07 03:50:08,216 DEBUG Request to GooglePlaces. loc:-90.0,0.0 rad:50000.0m max_info:1
+2018-06-07 03:50:08,369 DEBUG Request Addr:
+	https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyA7lJIidoEdefGNThTmtmGj0Z7d7FJ6lEU&location=-90.0,0.0&radius=50000.0
+2018-06-07 03:50:08,370 DEBUG 1/7 places sent to client.
+2018-06-07 03:50:08,370 INFO Send:
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": -89.86493589999999,
+          "lng": -16.1718771
+        },
+        "viewport": {
+          "northeast": {
+            "lat": -89.8635869197085,
+            "lng": -16.1705281197085
+          },
+          "southwest": {
+            "lat": -89.8662848802915,
+            "lng": -16.1732260802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "1656735795e4060d5fbfaf1d4f7f6db6233949a5",
+      "name": "Square360",
+      "place_id": "ChIJE_1kUUutqroRWrGTWbh_UgY",
+      "reference": "CmRRAAAAVJNcqkf5x13Wm_7Lw5AGyXyTHuHcPHLGAyI9pgw40lvwKV-SK9cXeI_6fhS2fIlE_k9HHdi-Pqyip511-23qu1EP52Q99YMkVsVsB8upPAAlNbmJNOuPy3uMPthNf8u5EhB73z3ptZ7Zd__TTmUT7ZvfGhRznd1hNMrU0y4ca0BSP5VrLuLWmg",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "41 Deerborne Trail, Newark"
+    }
+  ],
+  "status": "OK"
+}
+
+2018-06-07 03:50:30,516 INFO Disconnected from ('127.0.0.1', 55468)
+2018-06-07 03:59:15,900 INFO Closing server.
+
+

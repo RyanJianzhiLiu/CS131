@@ -1,0 +1,31 @@
+2018-06-07 03:45:14,400 DEBUG Using selector: EpollSelector
+2018-06-07 03:45:14,401 INFO Serving on ('127.0.0.1', 11215)
+2018-06-07 03:46:46,002 INFO Connection from ('127.0.0.1', 54016)
+2018-06-07 03:46:46,003 INFO Data received:
+	'PEERGoloman Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,003 DEBUG Database updated.
+2018-06-07 03:46:46,003 INFO Propagate message:
+	PEERHoliday Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu
+2018-06-07 03:46:46,004 DEBUG Skip source of data, Goloman
+2018-06-07 03:46:46,004 INFO Disconnected from ('127.0.0.1', 54016)
+2018-06-07 03:46:46,005 INFO Message sent to Welsh
+2018-06-07 03:46:46,005 INFO Message sent to Wilkes
+2018-06-07 03:46:46,008 INFO Connection from ('127.0.0.1', 54028)
+2018-06-07 03:46:46,008 INFO Data received:
+	'PEERWilkes Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,008 DEBUG Already in database:
+	kiwi.cs.ucla.edu:('Goloman', 8344471.081459045, '+34.068930-118.445127', '1520023934.918963997')
+2018-06-07 03:46:46,008 INFO Disconnected from ('127.0.0.1', 54028)
+2018-06-07 03:49:48,738 INFO Connection from ('127.0.0.1', 54054)
+2018-06-07 03:49:48,738 INFO Data received:
+	'PEERWelsh Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,738 DEBUG Database updated.
+2018-06-07 03:49:48,738 INFO Propagate message:
+	PEERHoliday Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin
+2018-06-07 03:49:48,739 INFO Disconnected from ('127.0.0.1', 54054)
+2018-06-07 03:49:48,739 INFO Message sent to Goloman
+2018-06-07 03:49:48,739 DEBUG Skip source of data, Welsh
+2018-06-07 03:49:48,740 INFO Message sent to Wilkes
+2018-06-07 03:59:11,227 INFO Closing server.
+
+

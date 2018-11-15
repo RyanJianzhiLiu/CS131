@@ -1,0 +1,27 @@
+2018-06-07 04:20:18,871 DEBUG Using selector: EpollSelector
+2018-06-07 04:20:18,872 INFO Serving on ('127.0.0.1', 11213)
+2018-06-07 04:20:28,077 INFO Connection from ('127.0.0.1', 49516)
+2018-06-07 04:20:30,762 INFO Data received:
+	'hi?\r\n'
+2018-06-07 04:20:30,762 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:20:30,763 INFO Send:
+	'? hi?\r\n'
+2018-06-07 04:20:41,343 INFO Data received:
+	'Hope you sleep well\r\n'
+2018-06-07 04:20:41,343 ERROR Invalid command name. Use IAMAT or WHATSAT.
+2018-06-07 04:20:41,343 INFO Send:
+	'? Hope you sleep well\r\n'
+2018-06-07 04:21:03,811 INFO Data received:
+	'IAMAT Ryan -23.35+34.456 23432545345\r\n'
+2018-06-07 04:21:03,812 INFO Send:
+	'AT Goloman -21904174881.188023 Ryan -23.35+34.456 23432545345\n'
+2018-06-07 04:21:03,812 DEBUG Database updated.
+2018-06-07 04:21:03,812 INFO Propagate message:
+	PEERGoloman Goloman -21904174881.188023 -23.35+34.456 23432545345 Ryan
+2018-06-07 04:21:03,812 WARNING Failed connecting to Hands.
+2018-06-07 04:21:03,813 WARNING Failed connecting to Holiday.
+2018-06-07 04:21:03,813 WARNING Failed connecting to Wilkes.
+2018-06-07 04:21:34,108 INFO Disconnected from ('127.0.0.1', 49516)
+2018-06-07 04:21:38,022 INFO Closing server.
+
+

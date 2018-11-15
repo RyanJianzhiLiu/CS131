@@ -1,0 +1,263 @@
+2018-06-07 03:45:00,645 DEBUG Using selector: EpollSelector
+2018-06-07 03:45:00,646 INFO Serving on ('127.0.0.1', 11213)
+2018-06-07 03:46:20,974 INFO Connection from ('127.0.0.1', 49348)
+2018-06-07 03:46:45,999 INFO Data received:
+	'IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1520023934.918963997\r\n'
+2018-06-07 03:46:46,000 INFO Send:
+	'AT Goloman +8344471.081459045 kiwi.cs.ucla.edu +34.068930-118.445127 1520023934.918963997\n'
+2018-06-07 03:46:46,000 DEBUG Database updated.
+2018-06-07 03:46:46,000 INFO Propagate message:
+	PEERGoloman Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu
+2018-06-07 03:46:46,001 INFO Message sent to Hands
+2018-06-07 03:46:46,002 INFO Message sent to Holiday
+2018-06-07 03:46:46,003 INFO Message sent to Wilkes
+2018-06-07 03:48:14,116 INFO Data received:
+	'WHATSAT kiwi.cs.ucla.edu 10 1\r\n'
+2018-06-07 03:48:14,117 INFO Send:
+	'AT Goloman +8344471.081459045 kiwi.cs.ucla.edu +34.068930-118.445127 1520023934.918963997\n'
+2018-06-07 03:48:14,117 DEBUG Request to GooglePlaces. loc:34.06893,-118.445127 rad:10000.0m max_info:1
+2018-06-07 03:48:14,710 DEBUG Request Addr:
+	https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyA7lJIidoEdefGNThTmtmGj0Z7d7FJ6lEU&location=34.06893,-118.445127&radius=10000.0
+2018-06-07 03:48:14,711 DEBUG 1/20 places sent to client.
+2018-06-07 03:48:14,712 INFO Send:
+{
+  "html_attributions": [],
+  "next_page_token": "CqQCFwEAAA_FUH1UnS8F24_BQe_AkOhPr581btaHxh2MSP5ZKQC1f4F4qAoBJmD-tqvro2D449t7zxwlh1PK3CfaSx5QSHnYglFaBGT0veZQRvrzCcQGeuvnXnCPAZtRGqAVRjSdYaWvu9OcQbSg26L_-kn_syJrPZ6ogm0ygYGe2MVkZdoWWGTgY2-KzzEM1Qnh9HBcMdFhXJ_bJAXHo4o_ZLtQE9ABqQ2mW6sV1nVlLwwuKpOdmpFnlyWo96Snpa7GoOzGJA4xKBl2roz9JaiPBw-38shMvAuC9qBu6mmqKIlAGtGPx1Q-rbAxMRYGBu7NICAjdsxjJcyNuzGG4L3OdhPt6MNBrlS3ANfPmjAt6BoKFAQk7Ofxv1piclOB-h-2w6e5exIQyPvGrxfA7-2e1LnAAZweRRoUYFbzLqtA4EVoaChb1KYf3qEKxIs",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 34.0522342,
+          "lng": -118.2436849
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 34.3373061,
+            "lng": -118.1552891
+          },
+          "southwest": {
+            "lat": 33.7036519,
+            "lng": -118.6681759
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+      "name": "Los Angeles",
+      "photos": [
+        {
+          "height": 1024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104783537625313340909/photos\">Radoescu Antonela</a>"
+          ],
+          "photo_reference": "CmRaAAAAMaGTUZFvQMtYWF6I9tH5jV9zz-qAafSnr6HYcv0tl0tUzPo7VrKvPwvwG5znbrzL-WsOOdby4Al4u0fXSF78wLxzTWGced1q_ERNPz8NTWN4nueYk5cXzF85qu9P_q93EhALo-ROL1rkNiCuvoDpTkEEGhRprhqoxW07jR-3t-t18EOS40qxxQ",
+          "width": 1548
+        }
+      ],
+      "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+      "reference": "CmRbAAAAwefU62VeJ5pNiEFrkWG4PdK_qhWo2PtYttMvYpY07vfznnI69Lssu_Wrp1gr1bxmm0vACP5hMngJw1lZpE02fT6YV5F3S4hWniUs0JAU-R8NNwCWSJ5ijEYVa16vCJgdEhAE1vRvmfkmWXfex83uK3H3GhRa8shy7XJS2Fjq7Fj319cLqpoVZA",
+      "scope": "GOOGLE",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "vicinity": "Los Angeles"
+    }
+  ],
+  "status": "OK"
+}
+
+2018-06-07 03:48:20,725 INFO Disconnected from ('127.0.0.1', 49348)
+2018-06-07 03:49:48,739 INFO Connection from ('127.0.0.1', 49404)
+2018-06-07 03:49:48,740 INFO Data received:
+	'PEERHoliday Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,740 DEBUG Database updated.
+2018-06-07 03:49:48,740 INFO Propagate message:
+	PEERGoloman Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin
+2018-06-07 03:49:48,740 INFO Disconnected from ('127.0.0.1', 49404)
+2018-06-07 03:49:48,741 INFO Message sent to Hands
+2018-06-07 03:49:48,741 DEBUG Skip source of data, Holiday
+2018-06-07 03:49:48,742 INFO Message sent to Wilkes
+2018-06-07 03:49:48,742 INFO Connection from ('127.0.0.1', 49412)
+2018-06-07 03:49:48,743 INFO Data received:
+	'PEERWilkes Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,743 DEBUG Already in database:
+	Penguin:('Welsh', 348.7371883392334, '-90.00+000.00', '1528368240')
+2018-06-07 03:49:48,743 INFO Disconnected from ('127.0.0.1', 49412)
+2018-06-07 03:50:36,020 INFO Connection from ('127.0.0.1', 49420)
+2018-06-07 03:50:55,423 INFO Data received:
+	'WHATSAT Penguin 48.7 1\r\n'
+2018-06-07 03:50:55,424 INFO Send:
+	'AT Welsh +348.7371883392334 Penguin -90.00+000.00 1528368240\n'
+2018-06-07 03:50:55,424 DEBUG Request to GooglePlaces. loc:-90.0,0.0 rad:48700.0m max_info:1
+2018-06-07 03:50:55,560 DEBUG Request Addr:
+	https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyA7lJIidoEdefGNThTmtmGj0Z7d7FJ6lEU&location=-90.0,0.0&radius=48700.0
+2018-06-07 03:50:55,560 DEBUG 1/7 places sent to client.
+2018-06-07 03:50:55,561 INFO Send:
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": -89.86493589999999,
+          "lng": -16.1718771
+        },
+        "viewport": {
+          "northeast": {
+            "lat": -89.8635869197085,
+            "lng": -16.1705281197085
+          },
+          "southwest": {
+            "lat": -89.8662848802915,
+            "lng": -16.1732260802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "1656735795e4060d5fbfaf1d4f7f6db6233949a5",
+      "name": "Square360",
+      "place_id": "ChIJE_1kUUutqroRWrGTWbh_UgY",
+      "reference": "CmRRAAAAc7g1aD63BKrFvhokbLJNNZ8iQuWRbQeM3YD-km3O55gq5aYLNsmjV78qo16DarXNNdn4l6ngzICGrzqvW10pghS2CNRE7THOi5miQZexsxTEL_UOekfXp_SbWPQRLdknEhC_ZhJh_tkd21-kjrjdjMZ5GhQY3Gmro341Bl6tLpXnmgFxvr6WfA",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "41 Deerborne Trail, Newark"
+    }
+  ],
+  "status": "OK"
+}
+
+2018-06-07 03:51:38,874 INFO Disconnected from ('127.0.0.1', 49420)
+2018-06-07 03:59:06,539 INFO Closing server.
+
+
+2018-06-07 04:00:33,653 DEBUG Using selector: EpollSelector
+2018-06-07 04:00:33,654 INFO Serving on ('127.0.0.1', 11213)
+2018-06-07 04:00:45,411 INFO Connection from ('127.0.0.1', 49474)
+2018-06-07 04:00:47,391 INFO Data received:
+	'hi\r\n'
+2018-06-07 04:00:47,391 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:00:47,391 INFO Send:
+	'? hi\r\n'
+2018-06-07 04:01:00,450 INFO Data received:
+	'This is the last check before submission.\r\n'
+2018-06-07 04:01:00,450 ERROR Wrong number of arguments. 7/4
+2018-06-07 04:01:00,451 INFO Send:
+	'? This is the last check before submission.\r\n'
+2018-06-07 04:01:02,975 ERROR Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/local/cs/Python-3.6.5/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/local/cs/Python-3.6.5/lib/python3.6/asyncio/selector_events.py", line 730, in _read_ready
+    self._protocol.data_received(data)
+  File "test/server.py", line 67, in data_received
+    data = data_bytes.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2018-06-07 04:01:07,348 INFO Disconnected from ('127.0.0.1', 49474)
+2018-06-07 04:01:10,263 INFO Closing server.
+
+
+2018-06-07 04:07:41,230 DEBUG Using selector: EpollSelector
+2018-06-07 04:07:41,231 INFO Serving on ('127.0.0.1', 11213)
+2018-06-07 04:07:44,745 INFO Connection from ('127.0.0.1', 49512)
+2018-06-07 04:07:46,446 INFO Data received:
+	'hi\r\n'
+2018-06-07 04:07:46,446 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:07:46,446 INFO Send:
+	'? hi\r\n'
+2018-06-07 04:07:55,118 INFO Data received:
+	'This should be the last test...\r\n'
+2018-06-07 04:07:55,118 ERROR Wrong number of arguments. 6/4
+2018-06-07 04:07:55,118 INFO Send:
+	'? This should be the last test...\r\n'
+2018-06-07 04:07:57,368 ERROR Data received but decoding failed.
+2018-06-07 04:07:57,368 ERROR Data received but decoding failed.
+2018-06-07 04:07:57,904 INFO Data received:
+	'\r\n'
+2018-06-07 04:07:57,904 ERROR Wrong number of arguments. 0/4
+2018-06-07 04:07:57,905 INFO Send:
+	'? \r\n'
+2018-06-07 04:08:08,396 ERROR Data received but decoding failed.
+2018-06-07 04:08:08,397 ERROR Data received but decoding failed.
+2018-06-07 04:08:12,014 INFO Disconnected from ('127.0.0.1', 49512)
+2018-06-07 04:10:41,163 INFO Closing server.
+
+
+2018-06-07 04:10:51,462 DEBUG Using selector: EpollSelector
+2018-06-07 04:10:51,463 INFO Serving on ('127.0.0.1', 11213)
+2018-06-07 04:10:53,778 INFO Connection from ('127.0.0.1', 49514)
+2018-06-07 04:11:04,463 INFO Data received:
+	'^\r\n'
+2018-06-07 04:11:04,463 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:11:04,463 INFO Send:
+	'? ^\r\n'
+2018-06-07 04:11:22,708 ERROR Data received but decoding failed.
+2018-06-07 04:11:22,708 ERROR Data received but decoding failed.
+2018-06-07 04:11:31,809 ERROR Data received but decoding failed.
+2018-06-07 04:11:31,810 ERROR Data received but decoding failed.
+2018-06-07 04:11:45,266 INFO Data received:
+	'\x01\x13'
+2018-06-07 04:11:45,266 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:11:45,266 INFO Send:
+	'? \x01\x13'
+2018-06-07 04:11:46,903 INFO Data received:
+	'\x04'
+2018-06-07 04:11:46,903 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:11:46,903 INFO Send:
+	'? \x04'
+2018-06-07 04:11:51,155 ERROR Data received but decoding failed.
+2018-06-07 04:11:51,155 ERROR Data received but decoding failed.
+2018-06-07 04:11:51,631 ERROR Data received but decoding failed.
+2018-06-07 04:11:51,631 ERROR Data received but decoding failed.
+2018-06-07 04:11:52,243 INFO Data received:
+	'\x04'
+2018-06-07 04:11:52,244 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:11:52,244 INFO Send:
+	'? \x04'
+2018-06-07 04:12:07,456 ERROR Data received but decoding failed.
+2018-06-07 04:12:07,457 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,267 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,267 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,639 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,640 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,895 ERROR Data received but decoding failed.
+2018-06-07 04:12:09,896 ERROR Data received but decoding failed.
+2018-06-07 04:12:10,213 ERROR Data received but decoding failed.
+2018-06-07 04:12:10,213 ERROR Data received but decoding failed.
+2018-06-07 04:12:11,222 INFO Data received:
+	'\x04'
+2018-06-07 04:12:11,222 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:11,222 INFO Send:
+	'? \x04'
+2018-06-07 04:12:11,867 INFO Data received:
+	'\x04'
+2018-06-07 04:12:11,868 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:11,868 INFO Send:
+	'? \x04'
+2018-06-07 04:12:12,436 INFO Data received:
+	'\x04'
+2018-06-07 04:12:12,436 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:12,436 INFO Send:
+	'? \x04'
+2018-06-07 04:12:12,971 INFO Data received:
+	'\x04'
+2018-06-07 04:12:12,971 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:12,971 INFO Send:
+	'? \x04'
+2018-06-07 04:12:16,386 INFO Data received:
+	'\x04'
+2018-06-07 04:12:16,386 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:16,386 INFO Send:
+	'? \x04'
+2018-06-07 04:12:19,933 INFO Data received:
+	'\x13\x13\r\n'
+2018-06-07 04:12:19,933 ERROR Wrong number of arguments. 1/4
+2018-06-07 04:12:19,933 INFO Send:
+	'? \x13\x13\r\n'
+2018-06-07 04:16:01,962 INFO Closing server.
+
+

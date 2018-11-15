@@ -1,0 +1,72 @@
+After-action Report
+
+Outline of My Solution:
+My solutions to the problem involves two functions: "match_nt" and "match_rhs".
+"match_nt", if given a non-terminal value and its alternative list, will
+generate a matcher for this non-terminal value. "match_rhs", if given a list of
+symbols, will generate a matcher for this list of symbols. "match_nt" calls
+"match_rhs" to generate a matcher for some alternative rhs, and uses the output
+of this matcher. Similarly, "match_rhs" calls "match_nt" to generate a matcher
+for one of the symbols in rhs, and uses the output of the matcher.
+
+Reasons for My Solution:
+This approach makes good use of the "functional" property of OCaml. Both
+"match_nt" and "match_rhs" do not do the matching directly and do not return
+derivations and suffix. Instead, they return functions: matchers for specfic
+rhs and non-terminal symbol. By doing so, the program can easily call any
+matcher and base the generation of one matcher on the feedbacks from other
+matchers.
+Also, the design of the code makes it convenient to combine acceptor function
+and another matcher. Thus it is no need to worry about calling the acceptor
+function too early.
+
+Another Approach Considered But Rejected:
+Initially, I was trying to solve the problem with a "imperative programming
+language" mindset. I desgined a procedure, where three matcher functions, in a
+certain order, matches the fragment and generate derivations. "nt_match" is to
+match a fragment with a non-terminal symbol; "alter_ls_match" is to try every
+rule in the alternative list and return the first success. "rhs_match" is to
+match a fragment with a rule.
+
+Reason for Rejection:
+The main trouble I encountered during this approach is to use acceptor function
+properly. In the description above, there is no place for acceptor function.
+Though it is possible to add accept to some of the functions, it is hard to
+know when should it be called. Due to the design of my functions, it is also
+hard to combine accept and matchers to build a new acceptor function. Thus,
+I gave up this approach.
+
+Weakness:
+Thanks to leftmost derivation, my solution to this problem is able to avoid
+ambiguity. However, leftmost derivation also has the potential to cause
+trouble: the program will go into a dead loop if a non-terminal symbol's rhs
+starts with the same symbol.
+Take awkisk_grammar in the sample test case for example,
+	let awkish_grammar =
+	  (Expr,
+	   function
+	     | Expr ->
+	         [[N Term; N Binop; N Expr];
+	          [N Term]]
+	     | Term ->
+		 [[N Num];
+		  [N Lvalue];
+		  [N Incrop; N Lvalue];
+		  [N Lvalue; N Incrop];
+		  [T"("; N Expr; T")"]]
+	     | Lvalue ->
+		 [[T"$"; N Expr]]
+	     | Incrop ->
+		 [[T"++"];
+		  [T"--"]]
+	     | Binop ->
+		 [[T"+"];
+		  [T"-"]]
+	     | Num ->
+		 [[T"0"]; [T"1"]; [T"2"]; [T"3"]; [T"4"];
+		  [T"5"]; [T"6"]; [T"7"]; [T"8"]; [T"9"]])
+If we change the first rule of Expr:
+	[N Term; N Binop; N Expr]
+To:
+	[N Expr; N Binop; N Term]
+My program will go into a dead loop and terminate with stack overflow.

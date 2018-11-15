@@ -1,0 +1,49 @@
+2018-06-07 03:45:21,932 DEBUG Using selector: EpollSelector
+2018-06-07 03:45:21,933 INFO Serving on ('127.0.0.1', 11217)
+2018-06-07 03:46:46,003 INFO Connection from ('127.0.0.1', 51606)
+2018-06-07 03:46:46,004 INFO Data received:
+	'PEERGoloman Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,004 DEBUG Database updated.
+2018-06-07 03:46:46,004 INFO Propagate message:
+	PEERWilkes Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu
+2018-06-07 03:46:46,005 DEBUG Skip source of data, Goloman
+2018-06-07 03:46:46,005 INFO Disconnected from ('127.0.0.1', 51606)
+2018-06-07 03:46:46,006 INFO Connection from ('127.0.0.1', 51608)
+2018-06-07 03:46:46,006 INFO Data received:
+	'PEERHands Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,006 DEBUG Already in database:
+	kiwi.cs.ucla.edu:('Goloman', 8344471.081459045, '+34.068930-118.445127', '1520023934.918963997')
+2018-06-07 03:46:46,006 INFO Connection from ('127.0.0.1', 51612)
+2018-06-07 03:46:46,007 INFO Disconnected from ('127.0.0.1', 51608)
+2018-06-07 03:46:46,007 INFO Data received:
+	'PEERHoliday Goloman 8344471.081459045 +34.068930-118.445127 1520023934.918963997 kiwi.cs.ucla.edu'
+2018-06-07 03:46:46,007 DEBUG Already in database:
+	kiwi.cs.ucla.edu:('Goloman', 8344471.081459045, '+34.068930-118.445127', '1520023934.918963997')
+2018-06-07 03:46:46,007 INFO Message sent to Hands
+2018-06-07 03:46:46,007 INFO Disconnected from ('127.0.0.1', 51612)
+2018-06-07 03:46:46,008 INFO Message sent to Holiday
+2018-06-07 03:49:48,740 INFO Connection from ('127.0.0.1', 51646)
+2018-06-07 03:49:48,741 INFO Data received:
+	'PEERHoliday Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,741 DEBUG Database updated.
+2018-06-07 03:49:48,741 INFO Propagate message:
+	PEERWilkes Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin
+2018-06-07 03:49:48,741 INFO Disconnected from ('127.0.0.1', 51646)
+2018-06-07 03:49:48,742 INFO Connection from ('127.0.0.1', 51650)
+2018-06-07 03:49:48,742 INFO Data received:
+	'PEERGoloman Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,743 DEBUG Already in database:
+	Penguin:('Welsh', 348.7371883392334, '-90.00+000.00', '1528368240')
+2018-06-07 03:49:48,743 INFO Message sent to Goloman
+2018-06-07 03:49:48,743 INFO Disconnected from ('127.0.0.1', 51650)
+2018-06-07 03:49:48,744 INFO Connection from ('127.0.0.1', 51654)
+2018-06-07 03:49:48,744 INFO Data received:
+	'PEERHands Welsh 348.7371883392334 -90.00+000.00 1528368240 Penguin'
+2018-06-07 03:49:48,744 DEBUG Already in database:
+	Penguin:('Welsh', 348.7371883392334, '-90.00+000.00', '1528368240')
+2018-06-07 03:49:48,744 INFO Message sent to Hands
+2018-06-07 03:49:48,744 DEBUG Skip source of data, Holiday
+2018-06-07 03:49:48,745 INFO Disconnected from ('127.0.0.1', 51654)
+2018-06-07 03:59:13,479 INFO Closing server.
+
+
